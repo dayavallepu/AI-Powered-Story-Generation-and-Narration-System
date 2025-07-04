@@ -1,0 +1,312 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.storybook-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f9d423 0%, #ff4e50 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive, sans-serif;
+}
+
+.storybook-container {
+  background: rgba(255, 255, 255, 0.65);
+  /* semi-transparent white */
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  padding: 2rem 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.storybook-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ff4e50;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.storybook-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.storybook-form span {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: #ff4e50;
+  font-weight: bold;
+}
+
+.storybook-form select,
+.storybook-form input,
+.storybook-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ffd36e;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.storybook-btn {
+  background: linear-gradient(90deg, #f9d423 0%, #ff4e50 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+
+.storybook-btn:hover {
+  background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+}
+
+/* Transparent card style for all main sections */
+.storybook-card {
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Optional: add a border for visual separation */
+.storybook-card label,
+.storybook-card h2,
+.storybook-card pre,
+.storybook-card textarea {
+  background: transparent !important;
+}
+
+/* Remove background from .storybook-story so it inherits transparency */
+.storybook-story {
+  margin-top: 2rem;
+  background: transparent;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: none;
+}
+
+/* Remove background from .storybook-form so it inherits transparency */
+.storybook-form {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Remove background from feedback and thank you */
+.storybook-feedback,
+.storybook-thankyou {
+  background: transparent;
+  box-shadow: none;
+  padding: 0;
+}
+
+.storybook-story h2 {
+  color: #f9d423;
+  margin-bottom: 1rem;
+}
+
+.storybook-moral {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #1916f5;
+}
+
+.storybook-latency {
+  margin-top: 0.5rem;
+  color: #888;
+  font-size: 0.95rem;
+}
+
+.storybook-feedback {
+  margin-top: 1.5rem;
+}
+
+.storybook-feedback textarea {
+  margin-bottom: 0.5rem;
+  width: 98%;
+  /* Make it a bit wider */
+  min-width: 320px;
+  /* Optional: set a minimum width */
+  max-width: 100%;
+  /* Prevent overflow */
+  font-size: 1.1rem;
+  /* Optional: slightly larger text */
+  background: transparent;
+  /* Make textarea transparent */
+  /* Optional: remove box-shadow or border if you want full transparency */
+}
+
+.storybook-thankyou {
+  margin-top: 1.5rem;
+  color: #27ae60;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.welcome-bg {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.welcome-video {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.welcome-overlay {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-btn {
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  background: linear-gradient(90deg, #f9d423 0%, #ff4e50 100%);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s;
+}
+
+.welcome-btn:hover {
+  background: linear-gradient(90deg, #ff4e50 0%, #f9d423 100%);
+}
+
+/* Specific styles for the storybook cards in the new layout */
+.storybook-card {
+  margin-bottom: 2rem;
+}
+
+.storybook-card label {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.storybook-card select,
+.storybook-card input,
+.storybook-card textarea {
+  margin-top: 0.5rem;
+}
+
+.storybook-card.storybook-story {
+  background: #fff;
+  border: 1px solid #ffd36e;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+/* Add to App.css */
+.custom-multiselect:focus .custom-multiselect-options {
+  display: block;
+}
+
+.storybook-story {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+  padding: 2rem 1.5rem;
+  margin: 2rem 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.storybook-story pre {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 1.1rem;
+  color: #222;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* App.css */
+input:focus {
+  outline: 2px solid #ff9800 !important;
+  border-color: #ff9800 !important;
+}
+
+/* Blue color for placeholder text */
+input::placeholder {
+  color: #ff9800;
+  opacity: 1;
+}
+
+/* Make input text orange in Welcome.js */
+.welcome-overlay input {
+  color: #f4f3f0 !important;
+}
