@@ -1,0 +1,3 @@
+# No Python requirements needed for React front-end.
+# For development, ensure Node.js and npm are installed.
+# All JS dependencies are managed via package.json in the storybook folder.
